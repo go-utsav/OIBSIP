@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JavaScript Calculator</title>
+	<style type="text/css">
+		body {
+			background: lightgrey;
+			text-align: center;
+		}
+	
+		.textbox {
+			background-color: whitesmoke;
+			border: 1px solid black;
+			color: black;
+			padding: 20px;
+			margin: 10px;
+			width: 300px;
+			font-size: xx-large;
+		}
+		
+		input {
+			background-color: blue;
+			border: 1px solid black;
+			color: white;
+			padding: 10px;
+			margin: 5px;
+			width: 100px;
+			height: 50px;
+			font-weight: bolder;
+			font-size: x-large;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Simple Calculator using Javascript</h1>
+	<form name="forms" class="formstyle">
+		<input type="text" class="textbox" name="answer"> <br> <br>
+		<input type="button" value=" 1 " onclick="forms.answer.value += '1' ">
+		<input type="button" value=" 2 " onclick="forms.answer.value += '2' ">
+		<input type="button" value=" 3 " onclick="forms.answer.value += '3' "> <br> <br>
+
+		<input type="button" value=" 4 " onclick="forms.answer.value += '4' ">
+		<input type="button" value=" 5 " onclick="forms.answer.value += '5' ">
+		<input type="button" value=" 6 " onclick="forms.answer.value += '6' "> <br> <br>
+		
+		<input type="button" value=" 7 " onclick="forms.answer.value += '7' ">
+		<input type="button" value=" 8 " onclick="forms.answer.value += '8' ">
+		<input type="button" value=" 9 " onclick="forms.answer.value += '9' "> <br> <br>
+
+		<input type="button" value=" + " onclick="forms.answer.value += '+' ">
+		<input type="button" value=" - " onclick="forms.answer.value += '-' ">
+		<input type="button" value=" / " onclick="forms.answer.value += '/' "> <br> <br>
+
+		<input type="button" value=" * " onclick="forms.answer.value += '*' "> 
+		<input type="button" value=" 0 " onclick="forms.answer.value += '0 ' ">
+		<input type="button" value=" = " onclick="forms.answer.value = eval(forms.answer.value) "> <br> <br>
+		<input type="button" value="Clear" onclick="forms.answer.value   = '' ">
+	</form> 
+	<br><br>	
+	<footer>Design And developed by &copy;Utsav Gohel</footer>
+</body>
+</html> 
